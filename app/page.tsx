@@ -1,7 +1,12 @@
+"use client";
+
 import Image from 'next/image';
 import Navigation from './components/Navigation';
+import { useState } from 'react';
 
 export default function Home() {
+  const [count, setCount] = useState(0); // Estado para o contador
+
   return (
     <div>
       <Navigation />
@@ -35,6 +40,22 @@ export default function Home() {
               Este é um espaço dedicado à memória e celebração da vida de nosso querido ente.
               Aqui compartilhamos histórias, memórias e momentos especiais que mantêm vivo
               seu legado em nossos corações.
+            </p>
+          </div>
+
+          {/* Botão com contador */}
+          <div className="mt-12">
+            <p className="text-xl font-semibold text-gray-700 mb-4">
+              Acenda uma vela para essa pessoa
+            </p>
+            <button
+              onClick={() => setCount(count + 1)}
+              className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded shadow-lg"
+            >
+              Clique Aqui
+            </button>
+            <p className="mt-4 text-gray-700 text-lg">
+              Velas acesas: <span className="font-bold">{count}</span>
             </p>
           </div>
         </div>
