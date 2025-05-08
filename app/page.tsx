@@ -28,7 +28,7 @@ export default function Home() {
           <h2 className="text-3xl font-semibold text-gray-700 mb-8">
             Joaquim Almeida da Silva
             <br />
-            <span className="text-xl text-gray-500">✰ 09 de setembro de 1953 - ✞ 05 de setembro de 2012</span>
+            <span className="text-xl text-gray-500">✰ 09 de setembro de 1953 - ✞ 05 de setembro de 2012  (58 anos)</span>
           </h2>
           
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-12">
