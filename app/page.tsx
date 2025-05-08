@@ -14,7 +14,7 @@ export default function Home() {
         <div className="text-center">
           <div className="relative w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
             <Image
-              src="/imagens/pai-1.jpg" // Caminho correto
+              src="/imagens/pai5.png" // Caminho correto
               alt="Foto do Ente Querido"
               fill
               style={{ objectFit: 'cover' }}
