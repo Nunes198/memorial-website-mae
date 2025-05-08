@@ -45,6 +45,17 @@ export default function Home() {
 
           {/* Botão com contador */}
           <div className="mt-12">
+            {/* Imagem da vela */}
+            <div className="mb-4">
+              <Image
+                src="/imagens/vela.png" // Caminho correto para a imagem da vela
+                alt="Imagem de uma vela"
+                width={150} // Largura igual ao botão
+                height={50} // Altura igual ao botão
+                className="mx-auto"
+              />
+            </div>
+
             <p className="text-xl font-semibold text-gray-700 mb-4">
               Acenda uma vela para essa pessoa
             </p>
