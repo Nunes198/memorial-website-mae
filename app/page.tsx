@@ -48,7 +48,7 @@ export default function Home() {
             {/* Imagem da vela */}
             <div className="mb-4">
               <Image
-                src="/imagens/vela.png" // Caminho correto para a imagem da vela
+                src="/imagens/vela1.png" // Caminho correto para a imagem da vela
                 alt="Imagem de uma vela"
                 width={150} // Largura igual ao botão
                 height={50} // Altura igual ao botão
