@@ -18,11 +18,11 @@ export default function Gallery() {
 
   const photos: Photo[] = [
     { id: 1, src: '/imagens/pai-4.jpg', title: 'foto quando jovem', date: '1970' },
-    { id: 2, src: '/placeholder-photo.jpg', title: 'Momento Especial 2', date: '2019' },
+    { id: 2, src: '/imagens/pai-6.png', title: 'Momento Especial', date: '1984' },
     { id: 3, src: '/imagens/pai-2.jpg', title: 'Casamento', date: '1984' },
     { id: 4, src: '/imagens/pai-1.jpg', title: 'Batismo do filho', date: '1987' },
     { id: 5, src: '/imagens/pai-3.jpg', title: 'Formatura da Filha', date: '2009' },
-    { id: 6, src: '/placeholder-photo.jpg', title: 'Momento Especial 6', date: '2015' },
+    { id: 6, src: '/imagens/pai-7.png', title: 'Momento Especial', date: '1988' },
   ];
 
   return (
