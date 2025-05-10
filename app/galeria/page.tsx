@@ -17,11 +17,11 @@ export default function Gallery() {
   const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
 
   const photos: Photo[] = [
-    { id: 1, src: '/imagens/pai-4.jpg', title: 'foto quando jovem', date: '1970' },
-    { id: 2, src: '/imagens/pai-6.png', title: 'Momento Especial', date: '1984' },
+    { id: 1, src: '/imagens/mae-2.png', title: 'foto quando jovem', date: '1970' },
+    { id: 2, src: '/imagens/mae-3.png', title: 'Foto com seu irmão', date: '2002' },
     { id: 3, src: '/imagens/pai-2.jpg', title: 'Casamento', date: '1984' },
     { id: 4, src: '/imagens/pai-1.jpg', title: 'Batismo do filho', date: '1987' },
-    { id: 5, src: '/imagens/pai-3.jpg', title: 'Formatura da Filha', date: '2009' },
+    { id: 5, src: '/imagens/mae-4.png', title: 'Cozinhando', date: '2000' },
     { id: 6, src: '/imagens/pai-7.png', title: 'Momento Especial', date: '1988' },
   ];
 

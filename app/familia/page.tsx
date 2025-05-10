@@ -16,14 +16,14 @@ export default function Family() {
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="relative w-full h-64">
                 <Image
-                  src="/imagens/avos.jpg"
+                  src="/imagens/avo-1.jpg"
                   alt="Foto do Pai"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Francisco Canuto da Silva</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Geraldo Lopes da Silva</h3>
                 <p className="text-gray-600 mb-2">Pai</p>
               </div>
             </div>
@@ -32,14 +32,14 @@ export default function Family() {
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="relative w-full h-64">
                 <Image
-                  src="/imagens/avos1.jpg"
+                  src="/imagens/vo.png"
                   alt="Foto da Mãe"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Rita Facundo de Almeida</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Maria Martinhs de Freitas</h3>
                 <p className="text-gray-600 mb-2">Mãe</p>
               </div>
             </div>
@@ -98,17 +98,17 @@ export default function Family() {
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="relative w-full h-64">
                 <Image
-                  src="/imagens/esposa.jpg"
+                  src="/imagens/marido.png"
                   alt="Foto do Primeiro Membro Querido"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Maria Auxiliadora Lopes da Silva</h3>
-                <p className="text-gray-600 mb-2">Esposa</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Joaquim Almeida da Silva</h3>
+                <p className="text-gray-600 mb-2">Marido</p>
                 <p className="text-gray-500 text-sm">
-                  Companheira de vida e amor eterno.
+                  Companheiro de vida e amor eterno.
                 </p>
               </div>
             </div>
@@ -125,7 +125,7 @@ export default function Family() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Enzo Gabriel</h3>
-                <p className="text-gray-600 mb-2">neto</p>
+                <p className="text-gray-600 mb-2">Neto</p>
                 <p className="text-gray-500 text-sm">
                   
                 </p>

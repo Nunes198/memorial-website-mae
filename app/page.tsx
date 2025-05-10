@@ -12,9 +12,9 @@ export default function Home() {
       <Navigation />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center">
-          <div className="relative w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-200 shadow-lg">
+          <div className="relative w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-pink-200 shadow-lg">
             <Image
-              src="/imagens/pai5.png" // Caminho correto
+              src="/imagens/mae-1.png" // Caminho correto
               alt="Foto do Ente Querido"
               fill
               style={{ objectFit: 'cover' }}
@@ -23,12 +23,12 @@ export default function Home() {
           </div>
           
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Em Memória de
+            Em Memória de:
           </h1>
           <h2 className="text-3xl font-semibold text-gray-700 mb-8">
-            Joaquim Almeida da Silva
+            Maria Auxiliadora Lopes da Silva
             <br />
-            <span className="text-xl text-gray-500">✰ 09 de setembro de 1953 - ✞ 05 de setembro de 2012  (58 anos)</span>
+            <span className="text-xl text-gray-500">✰ 25 de maio de 1960 - ✞ 28 de novembro de 2008  (48 anos)</span>
           </h2>
           
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-12">
@@ -66,7 +66,7 @@ export default function Home() {
               Clique Aqui
             </button>
             <p className="mt-4 text-gray-700 text-lg">
-              Velas acesas: <span className="font-bold">{count}</span>
+              Vela(s) acesa(s): <span className="font-bold">{count}</span>
             </p>
           </div>
         </div>
