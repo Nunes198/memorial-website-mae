@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -88,6 +89,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <Footer /> {/* Adicionando o rodapé */}
     </div>
   );
 }

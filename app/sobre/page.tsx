@@ -1,5 +1,6 @@
 import Navigation from '../components/Navigation';
 import Image from 'next/image';
+import Footer from '../components/Footer';
 
 export default function About() {
   return (
@@ -11,7 +12,7 @@ export default function About() {
         <div className="text-center mb-8">
           <div className="relative w-64 h-64 mx-auto">
             <Image
-              src="/imagens/brasao.png" // Substitua pelo caminho da sua imagem
+              src="/imagens/brasao.png"
               alt="Descrição da imagem"
               fill
               style={{ objectFit: 'cover' }}
@@ -24,11 +25,11 @@ export default function About() {
         </p>
 
         <div className="text-center mt-8">
-          <p className="text-lg text-gray-600">Para mais informações entre em contato e faça seu orçamento:</p>
+          <p className="text-lg text-gray-600">Para mais informações entre em contato:</p>
           <div className="flex justify-center items-center mt-2">
             <div className="relative w-6 h-6 mr-2">
               <Image
-                src="/imagens/whatsapp.png" // Substitua pelo caminho da sua imagem do WhatsApp
+                src="/imagens/whatsapp.png"
                 alt="WhatsApp"
                 fill
                 style={{ objectFit: 'contain' }}
@@ -38,6 +39,7 @@ export default function About() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
