@@ -2,10 +2,27 @@
 
 import Image from 'next/image';
 import Navigation from './components/Navigation';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Home() {
   const [count, setCount] = useState(0); // Estado para o contador
+
+  // Carregar o valor do contador do Local Storage ao carregar a página
+  useEffect(() => {
+    const savedCount = localStorage.getItem('count');
+    if (savedCount) {
+      setCount(parseInt(savedCount, 10));
+    }
+  }, []);
+
+  // Atualizar o Local Storage sempre que o contador mudar
+  useEffect(() => {
+    localStorage.setItem('count', count.toString());
+  }, [count]);
+
+  const incrementCount = () => {
+    setCount(count + 1);
+  };
 
   return (
     <div>
@@ -60,7 +77,7 @@ export default function Home() {
               Acenda uma vela para essa pessoa
             </p>
             <button
-              onClick={() => setCount(count + 1)}
+              onClick={incrementCount}
               className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded shadow-lg"
             >
               Clique Aqui
