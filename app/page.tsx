@@ -30,7 +30,8 @@ export default function Home() {
       <Navigation />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center">
-          <div className="relative w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-pink-200 shadow-lg">
+          {/* Foto com efeito ao passar o mouse */}
+          <div className="relative w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-pink-200 shadow-lg transform transition duration-300 hover:scale-110 hover:shadow-xl">
             <Image
               src="/imagens/mae-1.png" // Caminho correto
               alt="Foto do Ente Querido"
@@ -77,9 +78,10 @@ export default function Home() {
             <p className="text-xl font-semibold text-gray-700 mb-4">
               Acenda uma vela para essa pessoa
             </p>
+            {/* Botão com efeito ao passar o mouse */}
             <button
               onClick={incrementCount}
-              className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded shadow-lg"
+              className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded shadow-lg transform transition duration-300 hover:scale-105"
             >
               Clique Aqui
             </button>

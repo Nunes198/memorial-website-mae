@@ -18,7 +18,7 @@ export default function Gallery() {
   const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
 
   const photos: Photo[] = [
-    { id: 1, src: '/imagens/mae-2.png', title: 'foto quando jovem', date: '1970' },
+    { id: 1, src: '/imagens/mae-2.png', title: 'Foto quando jovem', date: '1970' },
     { id: 2, src: '/imagens/mae-3.png', title: 'Foto com seu irmão', date: '2002' },
     { id: 3, src: '/imagens/pai-2.jpg', title: 'Casamento', date: '1984' },
     { id: 4, src: '/imagens/pai-1.jpg', title: 'Batismo do filho', date: '1987' },
@@ -30,12 +30,12 @@ export default function Gallery() {
     <div>
       <Navigation />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">Galeria de Fotos</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center">Galeria de Fotos</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {photos.map((photo) => (
             <div
               key={photo.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer"
+              className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-lg"
               onClick={() => setSelectedPhoto(photo)} // Define a foto selecionada ao clicar
             >
               <div className="relative w-full h-64">
@@ -44,6 +44,7 @@ export default function Gallery() {
                   alt={photo.title}
                   fill
                   style={{ objectFit: 'cover' }}
+                  className="hover:opacity-90"
                 />
               </div>
               <div className="p-4">
@@ -80,7 +81,7 @@ export default function Gallery() {
           </div>
         )}
       </main>
-       <Footer />
+      <Footer />
     </div>
   );
 }

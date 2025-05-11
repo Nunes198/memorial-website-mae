@@ -7,20 +7,21 @@ export default function Family() {
     <div>
       <Navigation />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">Família</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center">Família</h1>
         
         {/* Seção dos Pais */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Pais</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Pais</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {/* Pai */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
               <div className="relative w-full h-64">
                 <Image
                   src="/imagens/avo-1.jpg"
                   alt="Foto do Pai"
                   fill
                   style={{ objectFit: 'cover' }}
+                  className="hover:opacity-90"
                 />
               </div>
               <div className="p-6">
@@ -30,13 +31,14 @@ export default function Family() {
             </div>
 
             {/* Mãe */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
               <div className="relative w-full h-64">
                 <Image
                   src="/imagens/vo.png"
                   alt="Foto da Mãe"
                   fill
                   style={{ objectFit: 'cover' }}
+                  className="hover:opacity-90"
                 />
               </div>
               <div className="p-6">
@@ -49,43 +51,41 @@ export default function Family() {
 
         {/* Seção dos Filhos */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Filhos</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Filhos</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {/* Primeiro Filho */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
               <div className="relative w-full h-64">
                 <Image
                   src="/imagens/nunes.jpg"
                   alt="Foto do Primeiro Filho"
                   fill
                   style={{ objectFit: 'cover' }}
+                  className="hover:opacity-90"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Nunes</h3>
                 <p className="text-gray-600 mb-2">Filho</p>
-                <p className="text-gray-500 text-sm">
-                  Saudade Eterna!!!
-                </p>
+                <p className="text-gray-500 text-sm">Saudade Eterna!!!</p>
               </div>
             </div>
 
             {/* Segundo Filho */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
               <div className="relative w-full h-64">
                 <Image
                   src="/imagens/nayane.jpg"
                   alt="Foto do Segundo Filho"
                   fill
                   style={{ objectFit: 'cover' }}
+                  className="hover:opacity-90"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Nayane</h3>
                 <p className="text-gray-600 mb-2">Filha</p>
-                <p className="text-gray-500 text-sm">
-                  Saudade Eterna!!!
-                </p>
+                <p className="text-gray-500 text-sm">Saudade Eterna!!!</p>
               </div>
             </div>
           </div>
@@ -93,43 +93,40 @@ export default function Family() {
 
         {/* Seção de Outros Membros Queridos */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Outros Membros Queridos</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Outros Membros Queridos</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Primeiro membro querido */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
               <div className="relative w-full h-64">
                 <Image
                   src="/imagens/marido.png"
                   alt="Foto do Primeiro Membro Querido"
                   fill
                   style={{ objectFit: 'cover' }}
+                  className="hover:opacity-90"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Joaquim Almeida da Silva</h3>
                 <p className="text-gray-600 mb-2">Marido</p>
-                <p className="text-gray-500 text-sm">
-                  Companheiro de vida e amor eterno.
-                </p>
+                <p className="text-gray-500 text-sm">Companheiro de vida e amor eterno.</p>
               </div>
             </div>
 
             {/* Segundo membro querido */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
               <div className="relative w-full h-64">
                 <Image
                   src="/imagens/neto.png"
                   alt="Foto do Segundo Membro Querido"
                   fill
                   style={{ objectFit: 'cover' }}
+                  className="hover:opacity-90"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Enzo Gabriel</h3>
                 <p className="text-gray-600 mb-2">Neto</p>
-                <p className="text-gray-500 text-sm">
-                  
-                </p>
               </div>
             </div>
           </div>
